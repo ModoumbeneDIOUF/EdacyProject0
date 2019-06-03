@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".AddStudent"
+                android:padding="5dp"
+>
+
+    <RelativeLayout
+            android:id="@+id/re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="-40dp"
+    >
+
+        <TextView
+                android:layout_marginRight="30dp"
+                android:id="@+id/titreAddStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Ajouter nouveau Eleve"
+                android:textSize="30dp"
+                android:layout_marginLeft="20dp"
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:background="@color/col1"
+                android:textColor="@color/col2"
+        />
+
+
+        <EditText
+                android:id="@+id/nomEleve"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:paddingBottom="5dp"
+                android:hint="Nom"
+                android:layout_marginLeft="50dp"
+                android:layout_below="@id/titreAddStudent"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="27dp"/>
+        <EditText
+                android:id="@+id/prenomEleve"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:paddingBottom="5dp"
+                android:hint="Prenom"
+                android:layout_marginLeft="50dp"
+                android:layout_below="@id/nomEleve"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="27dp"/>
+        <EditText
+                android:id="@+id/classeEleve"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:paddingBottom="5dp"
+                android:hint="Classe"
+                android:layout_marginLeft="50dp"
+                android:layout_below="@id/prenomEleve"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="27dp"/>
+
+        <Button
+                android:id="@+id/btnAddEleve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:background="@color/col1"
+
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/classeEleve"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="4dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

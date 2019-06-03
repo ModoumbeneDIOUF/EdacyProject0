@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity"
+                android:padding="5dp"
+                >
+
+    <RelativeLayout
+            android:id="@+id/re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="-40dp"
+    >
+
+        <TextView
+                android:layout_marginRight="30dp"
+                android:id="@+id/label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Gestion lycée"
+                android:textSize="30dp"
+                android:layout_marginLeft="20dp"
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:background="@color/col1"
+                android:textColor="@color/col2"
+        />
+
+        <Button
+                android:id="@+id/ajouter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add classe"
+                android:layout_below="@id/label"
+                android:layout_marginTop="5dp"
+        />
+        <Button
+                android:id="@+id/modifier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/label"
+                android:layout_marginTop="5dp"
+        android:layout_marginRight="27dp"/>
+        <Button
+                android:id="@+id/supprimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/ajouter"
+                android:layout_marginTop="6dp" android:layout_marginRight="228dp"/>
+
+        <Button
+                android:id="@+id/ajout_eleve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add student"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/modifier"
+                android:layout_marginTop="5dp" android:layout_marginRight="4dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

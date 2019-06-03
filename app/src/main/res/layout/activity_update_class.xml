@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".UpdateClass"
+                android:padding="5dp"
+>
+
+    <RelativeLayout
+            android:id="@+id/re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="-40dp"
+    >
+
+        <TextView
+                android:layout_marginRight="30dp"
+                android:id="@+id/modifClasse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Modier Classe"
+                android:textSize="30dp"
+                android:layout_marginLeft="20dp"
+                android:padding="20dp"
+                android:textAlignment="center"
+                android:background="@color/col1"
+                android:textColor="@color/col2"
+        />
+
+
+        <EditText
+                android:id="@+id/ancienNom"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:paddingBottom="5dp"
+                android:hint="ancien nom de la classe"
+                android:layout_marginLeft="50dp"
+                android:layout_below="@id/modifClasse"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="27dp"/>
+        <EditText
+                android:id="@+id/nouveauNomClasse"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:paddingBottom="5dp"
+                android:hint="nouveau nom de la classe"
+                android:layout_marginLeft="50dp"
+                android:layout_below="@id/ancienNom"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="27dp"/>
+
+        <Button
+                android:id="@+id/btnModifClasse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:background="@color/col1"
+
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/nouveauNomClasse"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="4dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
